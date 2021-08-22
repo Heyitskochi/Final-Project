@@ -1,0 +1,87 @@
+.margin-top-80 {
+	margin-top: 80px;
+}
+
+
+.container {
+	padding: 20px;
+	}
+
+.box {
+	font-family: serif;
+	font-size: 20px;
+	background-color: rgba(218, 216, 216, 0.9);
+	padding: 30px;
+	height: auto;
+	color: black;
+}
+
+.box h1 {
+	font-family: serif;
+	font-size: 30px;
+	color: #0c00b3;
+	font-weight: bold;
+}
+
+.ProjectSummary {
+	font-family: serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #0c00b3;
+	height: 40px;
+	/* padding: 5px; */
+	text-decoration: none;
+	justify-content: flex-start;
+}
+
+/* .ProjectSummary-1 {
+	color: white;
+	background-color: #0c00b3;
+} */
+
+.navbar {
+	background-color: rgba(218, 216, 216, 0.9);
+}
+
+@media (max-width: 600px) {.navbar {
+	background-color: #0c00b3 !important;
+}
+}
+
+
+.hr {
+	padding: 20px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.box h2 {
+	font-family: serif;
+	font-size: 20px;
+	color: #0c00b3;
+	font-weight: bold;
+}
+
+.img-thumbnail {
+	border-style: solid;
+	border-color: transparent;
+	padding-bottom: 20px;
+	background-color: rgba(218, 216, 216, 0.9);
+}
+
+p {
+	color: black;
+	font-family: serif;
+	font-size: 20px;
+}
+
+.ReturntoTop {
+	text-align: end;
+	font-family: serif;
+	font-size: 20px;
+	color: #18b4fc;
+}
