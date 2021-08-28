@@ -42,7 +42,7 @@
         <div class="content-wrapper">
           <h2>Project Description and Outline</h2>
           <hr>
-          <p>For our final project, we wanted to determine the skills required for the top data analyst roles: Data Analyst, Data Scientist, and Data Engineer.  In order to find the most sought after skills employers are seeking for each position, we scraped a popular job board, Indeed.com, to obtain job title, job description, location, etc.  Next, we combined the data and used a Nation Language Processing model to analyze the importance of words within the job descriptions and have determined a confidence rating for the top data analyst roles.  Finally, we used Tableau to create visualizations of the data to understand the importance and frequency of the words..</p>
+          <p>For our final project, we wanted to determine the skills required for the top data analyst roles: Data Analyst, Data Scientist, and Data Engineer.  In order to find the most sought after skills employers are seeking for each position, we scraped a popular job board, Indeed.com, to obtain job title, job description, location, etc for positions posted in California.  Next, we combined the data and used a Nation Language Processing model to analyze the importance of words within the job descriptions and have determined a confidence rating for the top data analyst roles.  Finally, we used Tableau to create visualizations of the data to understand the importance and frequency of the words..</p>
         </div>
       </div>
       <br>
@@ -68,28 +68,31 @@
               <h2>Machine Learning</h2>
               <hr>
               <div class="col-lg-6 col-md-6">
-                <p><b><u>Pre-Processing:</u></b></p>
+                <br>
+                <p style="padding-top: 20px;"><b><u>Pre-Processing:</u></b></p>
                 <p></p>
                 <p>We used pysapark to tokenize, remove stop-words, stem, and lemmatize the text.  Then used the pos-tag function in the nltk package to categorize words by part-of-speech
                   Finally, we used Pandas dataframes to organize and aggregate functions on the dataset.</p>
                 <p></p>
-                <p><b><u>Supervised Learning:</u></b></p>
+                <br>
+                <p style="padding-top: 20px;"><b><u>Supervised Learning:</u></b></p>
                 <p>We chose to focus on Natural Language Processing since the majority of our data was context and text based.  Based our machine learning model off of Badreesh Shetty's spam-or-ham classifier, which uses RandomForest to categorize emails, and used both CountVectorizer and TF-IDF to analyze the job descriptions of tagged postings.</p>
                 <p></p>
                 <p>TF-IDF model was able to accurately predict job requirements for the Data Analyst and Data Scientist positions but had a significantly lower confidence score for Data Engineer positions:</p>
                 <p>
-                    <li>Data Analyst: 183</li>
-                    <li>Data Engineer: 79</li>
-                    <li>Data Scientist: 184</li>
+                    <li style="padding-left: 60px;">Data Analyst: 183</li>
+                    <li style="padding-left: 60px;">Data Engineer: 79</li>
+                    <li style="padding-left: 60px;">Data Scientist: 184</li>
                   </p>
               </div>
               <div class="col-lg-6 col-md-6">
-                <br>
-                <br>
                 <img class="shadow" src="Images/Machine_Learning_Code.png" width="600" height="400" class="img-fluid" alt="Responsive image">
                 <h4></h4>
+                <br>
+                <img class="shadow" width="600" height="400" src="Images/Confidence_Chart.png">
+                <h4 style="text-align: center;">Confidence_Chart</h4>
               </div>
-
+<!-- 
             </div>
             <div class="row">
               <div  style="text-align: center;">          
@@ -98,7 +101,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="container" class="d-flex">
           <div class="content-wrapper">
@@ -122,14 +125,15 @@
 
     <div class="footer-box" class="d-flex">
       <h4>Project Team:  </h4>
-      <p>Scott Cerny, Cameron Kochi, Becky McLaughlin, Mehul Parekh, Cameron Proctor</p>
+      <p style="margin-bottom: 5px;">Scott Cerny, Cameron Kochi, Becky McLaughlin, Mehul Parekh, Cameron Proctor</p>
+      <a href="https://github.com/Heyitskochi/Final-Project">Github.com/Heyitskochi/Final-Project</a>
     </div>
     <hr>
     <div class="reference-box" class="d-flex">
       <h4>References:  </h4>
-      <li>Indeed.com</li>
-      <li>https://github.com/BadreeshShetty/Natural-Language-Processing-NLP-for-Machine-Learning</li>
-      <li>https://www.velvetjobs.com/resume/manager-data-engineering-resume-sample</li>
+      <li><a href="Indeed.com">Indeed.com</a></li>
+      <li><a href="https://github.com/BadreeshShetty/Natural-Language-Processing-NLP-for-Machine-Learning">ttps://github.com/BadreeshShetty/Natural-Language-Processing-NLP-for-Machine-Learning</a></li>
+      <li><a href="https://www.velvetjobs.com/resume/manager-data-engineering-resume-sample">https://www.velvetjobs.com/resume/manager-data-engineering-resume-sample</a></li>
     </div>  
 
   </body>
