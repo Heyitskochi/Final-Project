@@ -65,23 +65,37 @@
         <div class="container" class="d-flex">
           <div class="content-wrapper">
             <div class="row">
+              <h2>Machine Learning</h2>
+              <hr>
               <div class="col-lg-6 col-md-6">
-                <h2>National Language Processing (NLP)</h2>
-                <hr>
-                <p class="card-text">Using a NLP classification model, we extracted raw textual data from the CSV file, tokenized that data, filtered for stopwords, and ran TF-IDF analyses to understand the importance of specific words within job descriptions for the given job titles.</p>
+                <p><b><u>Pre-Processing:</u></b></p>
+                <p></p>
+                <p class="card-text">We used pysapark to tokenize, remove stop-words, stem, and lemmatize the text.  Then used the pos-tag function in the nltk package to categorize words by part-of-speech
+                  Finally, we used Pandas dataframes to organize and aggregate functions on the dataset.</p>
+                <p></p>
+                <p><b><u>Supervised Learning:</u></b></p>
+                <p>We chose to focus on Natural Language Processing since the majority of our data was context and text based.  Based our machine learning model off of Badreesh Shetty's spam-or-ham classifier, which uses RandomForest to categorize emails, and used both CountVectorizer and TF-IDF to analyze the job descriptions of tagged postings.</p>
                 <p></p>
                 <p>TF-IDF model was able to accurately predict job requirements for the Data Analyst and Data Scientist positions but had a significantly lower confidence score for Data Engineer positions:</p>
-                  <p>
+                <p>
                     <li>Data Analyst: 183</li>
                     <li>Data Engineer: 79</li>
                     <li>Data Scientist: 184</li>
                   </p>
               </div>
               <div class="col-lg-6 col-md-6">
-                <img class="shadow" src="Images/Confidence_Chart.png" width="600" height="400" >
-                <h3>Confidence_Chart</h3>
+                <br>
+                <br>
+                <img class="shadow" src="Images/Machine_Learning_Code.png" width="600" height="400" >
+                <h4></h4>
               </div>
 
+            </div>
+            <div class="row">
+              <div  style="text-align: center;">          
+                <img class="shadow" width="600" height="400" src="Images/Confidence_Chart.png">
+                <h4>Confidence_Chart</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -92,9 +106,10 @@
             <hr>
             <br>
             <div class="col-lg-12 col-md-12">
-              <img src="Images/image.jpg" class="img-fluid" alt="Responsive image">
-              <p>Image Description</p>
+              <img src="Images/Word_Visualization.png" class="img-fluid" alt="Responsive image">
+              <p></p>
             </div>
+            <br>
             <br>
             <img src="Images/image.jpg" class="img-fluid" alt="Responsive image">
             <p>Image Description</p>
